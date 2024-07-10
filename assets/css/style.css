@@ -176,7 +176,6 @@ main {
   font-size: 0.9rem;
 }
 
-/* feature first portfolio item */
 .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
@@ -230,8 +229,6 @@ footer {
 
 }
 
-/* portfolio project images */
-/* TODO: Add portfolio project images here*/
 .surf-report{
   background-image: url("./images/02-portfolio-1.jpg");
 
@@ -253,7 +250,6 @@ footer {
   background-image: url("./images/02-portfolio-5.jpg");
 
 }
-/* media queries */
 
   nav a {
     font-size: 1.2rem;
