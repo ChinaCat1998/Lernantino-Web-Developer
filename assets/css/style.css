@@ -26,11 +26,15 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin:0;
 }
 
 p {
   margin: 0;
+}
+* {
+  box-sizing: border-box;
+
 }
 
 header {
@@ -88,7 +92,7 @@ main {
 
 .hero-banner {
   background: rgb(68, 88, 120);
-  background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url("./images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -218,12 +222,108 @@ main {
   background-size: 100% 88%;
   color: var(--secondary);
 }
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 10px 0;
+  text-align: center;
+
+}
 
 /* portfolio project images */
 /* TODO: Add portfolio project images here*/
+.surf-report{
+  background-image: url("./images/02-portfolio-1.jpg");
 
+}
+.led-wall{
+  background-image: url("./images/02-portfolio-2.jpg");
+}
+
+.react-calc{
+  background-image: url("./images/02-portfolio-3.jpg");
+}
+
+.pastel-puzzles{
+  background-image: url("./images/02-portfolio-4.jpg");
+}
+
+
+.run-buddy{
+  background-image: url("./images/02-portfolio-5.jpg");
+
+}
 /* media queries */
 
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  .hero-banner h2 {
+    font-size: 2rem;
+  }
+
+  .page-section > h2 {
+    font-size: 3.5vw;
+  }
+
+  .flex-item {
+    flex-basis: calc(100% - 1em);
+  }
+
 /* TODO: add media query for a max-width of 980px */
+@media screen and (max-width: 980px){
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .page-section > h2,
+  .page-section > div {
+    flex: 0 0 100%;
+  }
+  .page-section > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
 
 /* TODO: add media query for a max-width of 768px */
+@media screen and (max-width: 768px){
+
+     .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+    .flex-item,
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+      
+    }
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    
+    }
+  
