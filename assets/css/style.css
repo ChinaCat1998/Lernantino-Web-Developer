@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-/* brand color palette */
 :root {
   --primary: rgba(68, 88, 119, 1);
   --secondary: rgba(146, 204, 206, 1);
@@ -267,7 +266,6 @@ footer {
     flex-basis: calc(100% - 1em);
   }
 
-/* TODO: add media query for a max-width of 980px */
 @media screen and (max-width: 980px){
   header {
     padding: 0 0 10px 0;
@@ -299,8 +297,6 @@ footer {
     font-size: 7vw;
   }
 }
-
-/* TODO: add media query for a max-width of 768px */
 @media screen and (max-width: 768px){
 
      .flex-item,
